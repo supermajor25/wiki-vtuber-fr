@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vornakh - VTuber FR</title>
+  <title>Vornakh - VTuber</title>
 
   <style>
 
@@ -14,33 +14,40 @@
       color:white;
     }
 
+    /* BANNER */
+
+    .banner{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      filter:brightness(0.6);
+    }
+
     /* HEADER */
 
     header{
-      padding:60px 20px;
-      text-align:center;
-      background:#111827;
-      border-bottom:1px solid rgba(255,255,255,0.1);
       position:relative;
+      text-align:center;
+      padding-bottom:30px;
     }
 
     h1{
-      margin:0;
-      font-size:45px;
+      margin-top:-60px;
+      font-size:42px;
       text-shadow:0 0 15px #3b82f6;
     }
 
     .subtitle{
       color:#d1d5db;
-      margin-top:10px;
+      margin-top:5px;
     }
 
     /* BACK BUTTON */
 
     .back-btn{
       position:absolute;
-      left:20px;
       top:20px;
+      left:20px;
       padding:10px 14px;
       background:#2563eb;
       color:white;
@@ -55,7 +62,18 @@
       transform:scale(1.05);
     }
 
-    /* MAIN */
+    /* AVATAR */
+
+    .avatar{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #3b82f6;
+      box-shadow:0 0 20px rgba(59,130,246,0.6);
+      margin-top:-80px;
+      background:#111827;
+    }
 
     main{
       max-width:1000px;
@@ -81,10 +99,7 @@
       color:#d1d5db;
     }
 
-    a{
-      color:#60a5fa;
-      text-decoration:none;
-    }
+    /* TAGS */
 
     .tag{
       display:inline-block;
@@ -92,7 +107,30 @@
       border-radius:8px;
       background:#2563eb;
       font-size:12px;
-      margin-top:10px;
+      margin-right:5px;
+    }
+
+    /* LINKS */
+
+    a{
+      color:#60a5fa;
+      text-decoration:none;
+    }
+
+    .link{
+      display:inline-block;
+      padding:8px 12px;
+      background:#2563eb;
+      color:white;
+      border-radius:10px;
+      text-decoration:none;
+      margin:5px 5px 0 0;
+      transition:0.2s;
+    }
+
+    .link:hover{
+      background:#3b82f6;
+      transform:scale(1.05);
     }
 
   </style>
@@ -102,8 +140,14 @@
 
 <header>
 
-  <!-- retour vers la liste -->
+  <!-- BACK -->
   <a class="back-btn" href="index.html">⬅ Retour</a>
+
+  <!-- BANNER -->
+  <img class="banner" src="images/banner.jpg" alt="bannière">
+
+  <!-- AVATAR -->
+  <img class="avatar" src="images/vornakh.jpg" alt="avatar">
 
   <h1>Vornakh</h1>
   <p class="subtitle">VTuber francophone - Gaming</p>
@@ -118,10 +162,11 @@
     <h2>📌 Informations</h2>
 
     <span class="tag">Gaming</span>
+    <span class="tag">FR</span>
 
     <ul>
       <li><strong>Nom :</strong> Vornakh</li>
-      <li><strong>Type :</strong> VTuber FR</li>
+      <li><strong>Type :</strong> VTuber francophone</li>
       <li><strong>Contenu :</strong> Gaming / Stream</li>
       <li><strong>Langue :</strong> Français</li>
       <li><strong>Statut :</strong> Actif</li>
@@ -135,9 +180,9 @@
     <h2>📖 Description</h2>
 
     <p>
-      Vornakh est un VTuber francophone spécialisé dans le gaming.
-      Il crée des contenus autour de jeux variés et interagit avec sa communauté
-      à travers des streams et vidéos.
+      Description du VTuber ici.
+      Tu peux mettre son lore, son style,
+      et son univers.
     </p>
 
   </div>
@@ -145,11 +190,11 @@
   <!-- LIENS -->
   <div class="card">
 
-    <h2>🔗 Liens officiels</h2>
+    <h2>🔗 Réseaux sociaux</h2>
 
-    <ul>
-       <li><a href="https://supermajor25.github.io/royaume_d-moniaque.github.io/" target="_blank" "</a></li>
-    </ul>
+    <a class="link" href="https://youtube.com" target="_blank">YouTube</a>
+    <a class="link" href="https://twitch.tv" target="_blank">Twitch</a>
+    <a class="link" href="https://x.com" target="_blank">Twitter / X</a>
 
   </div>
 
