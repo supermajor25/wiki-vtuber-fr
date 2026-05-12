@@ -7,58 +7,65 @@
 
   <style>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111827;
-      color: white;
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0b1220;
+      color:white;
     }
 
-    header {
-      background: #1f2937;
-      padding: 30px;
-      text-align: center;
-      border-bottom: 2px solid #374151;
+    header{
+      padding:50px 20px;
+      text-align:center;
+      background:linear-gradient(45deg,#1f2937,#111827);
+      border-bottom:2px solid rgba(255,255,255,0.1);
     }
 
-    h1 {
-      margin: 0;
-      font-size: 40px;
+    header h1{
+      font-size:50px;
+      margin:0;
+      text-shadow:0 0 20px #3b82f6;
     }
 
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
+    main{
+      max-width:1000px;
+      margin:auto;
+      padding:50px 20px;
     }
 
-    .rule {
-      background: #1f2937;
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 25px;
+    .box{
+      background:rgba(31,41,55,0.8);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:18px;
+      padding:25px;
+      margin-bottom:25px;
+      backdrop-filter:blur(10px);
     }
 
-    .rule h2 {
-      margin-top: 0;
-      color: #60a5fa;
+    h2{
+      color:#60a5fa;
+      margin-top:0;
     }
 
-    a {
-      color: #60a5fa;
-      text-decoration: none;
+    ul{
+      line-height:1.8;
+      color:#d1d5db;
     }
 
-    .back {
-      display: inline-block;
-      margin-top: 20px;
-      background: #2563eb;
-      padding: 12px 20px;
-      border-radius: 10px;
+    a{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 20px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.2s;
     }
 
-    .back:hover {
-      background: #3b82f6;
+    a:hover{
+      transform:scale(1.05);
+      background:#3b82f6;
     }
 
   </style>
@@ -67,52 +74,91 @@
 <body>
 
   <header>
-    <h1>📜 Règlement du Wiki</h1>
+    <h1>📜 Règlement du Wiki VTuber FR</h1>
+    <p>Règles de fonctionnement et de contribution du projet</p>
   </header>
 
   <main>
 
-    <div class="rule">
-      <h2>Respect obligatoire</h2>
+    <div class="box">
+
+      <h2>🎯 Objectif du wiki</h2>
 
       <p>
-        Aucun harcèlement, propos haineux,
-        drama volontaire ou attaque ciblée.
+        Le Wiki VTuber FR a pour but de documenter la scène VTuber francophone,
+        ses créateurs, ses agences et ses événements de manière claire,
+        respectueuse et communautaire.
       </p>
+
     </div>
 
-    <div class="rule">
-      <h2>Informations vérifiées</h2>
+    <div class="box">
 
-      <p>
-        Les pages doivent contenir des informations publiques
-        et vérifiables.
-      </p>
+      <h2>🤝 Comportement général</h2>
+
+      <ul>
+        <li>Respect obligatoire entre tous les membres</li>
+        <li>Aucun harcèlement ou attaque personnelle</li>
+        <li>Aucun drama volontaire ou provocation</li>
+        <li>Respect des VTubers et créateurs</li>
+      </ul>
+
     </div>
 
-    <div class="rule">
-      <h2>Vie privée</h2>
+    <div class="box">
 
-      <p>
-        Le doxxing et la publication
-        d’informations privées sont interdits.
-      </p>
+      <h2>📚 Contenu des pages</h2>
+
+      <ul>
+        <li>Informations publiques uniquement</li>
+        <li>Sources fiables et vérifiables</li>
+        <li>Contenu neutre et factuel</li>
+        <li>Interdiction des rumeurs non confirmées</li>
+      </ul>
+
     </div>
 
-    <div class="rule">
-      <h2>IA générative</h2>
+    <div class="box">
 
-      <p>
-        Les contenus générés par IA générative
-        ne doivent pas être utilisés pour imiter
-        ou remplacer le travail des artistes
-        sans autorisation.
-      </p>
+      <h2>🔒 Vie privée & sécurité</h2>
+
+      <ul>
+        <li>Interdiction du doxxing</li>
+        <li>Interdiction des informations privées</li>
+        <li>Respect de l’anonymat des VTubers</li>
+        <li>Aucune fuite ou contenu non public</li>
+      </ul>
+
     </div>
 
-    <a class="back" href="index.html">
-      ⬅ Retour accueil
-    </a>
+    <div class="box">
+
+      <h2>🧠 Contenu interdit</h2>
+
+      <ul>
+        <li>Contenu haineux ou discriminatoire</li>
+        <li>NSFW explicite</li>
+        <li>Diffamation</li>
+        <li>Deepfakes ou imitation non autorisée</li>
+        <li>Contenu généré par IA utilisé pour remplacer ou imiter le travail d’un créateur sans autorisation</li>
+      </ul>
+
+    </div>
+
+    <div class="box">
+
+      <h2>✍️ Contributions</h2>
+
+      <ul>
+        <li>Les contributions sont ouvertes via GitHub</li>
+        <li>Chaque page peut être modifiée ou corrigée</li>
+        <li>Les admins peuvent valider ou refuser une modification</li>
+        <li>Les pages doivent respecter un minimum de qualité</li>
+      </ul>
+
+    </div>
+
+    <a href="index.html">⬅ Retour accueil</a>
 
   </main>
 
