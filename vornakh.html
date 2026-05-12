@@ -1,132 +1,172 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vornakh - VTuber</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vornakh - VTuber</title>
 
-<style>
+  <style>
 
-body{
-  margin:0;
-  font-family:Arial;
-  background:#070b14;
-  color:white;
-}
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#070b14;
+      color:white;
+    }
 
-/* BACK BUTTON */
-.back-btn{
-  position:absolute;
-  top:20px;
-  left:20px;
-  padding:10px 14px;
-  background:#2563eb;
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-  transition:0.2s;
-  font-size:14px;
-  z-index:10;
-}
+    /* BANNER */
 
-.back-btn:hover{
-  background:#3b82f6;
-  transform:scale(1.05);
-}
+    .banner{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      filter:brightness(0.6);
+    }
 
-/* BANNER */
-.banner{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  filter:brightness(0.6);
-  display:block;
-}
+    /* HEADER */
 
-/* PROFILE BLOCK */
-.profile{
-  text-align:center;
-  margin-top:-70px;
-  padding-bottom:20px;
-}
+    header{
+      position:relative;
+      text-align:center;
+      padding-bottom:30px;
+    }
 
-/* AVATAR */
-.avatar{
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid #3b82f6;
-  box-shadow:0 0 25px rgba(59,130,246,0.6);
-  background:#111827;
-}
+    h1{
+      margin-top:-60px;
+      font-size:42px;
+      text-shadow:0 0 15px #3b82f6;
+    }
 
-/* NAME */
-h1{
-  margin-top:15px;
-  font-size:42px;
-  text-shadow:0 0 15px #3b82f6;
-}
+    .subtitle{
+      color:#d1d5db;
+      margin-top:5px;
+    }
 
-/* SUBTITLE */
-.subtitle{
-  color:#d1d5db;
-  margin-top:8px;
-}
+    /* BACK BUTTON */
 
-/* MAIN */
-main{
-  max-width:1000px;
-  margin:auto;
-  padding:40px 20px;
-}
+    .back-btn{
+      position:absolute;
+      top:20px;
+      left:20px;
+      padding:10px 14px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.2s;
+      font-size:14px;
+    }
 
-.card{
-  background:#1f2937;
-  padding:25px;
-  border-radius:18px;
-  margin-bottom:20px;
-  border:1px solid rgba(255,255,255,0.1);
-}
+    .back-btn:hover{
+      background:#3b82f6;
+      transform:scale(1.05);
+    }
 
-h2{
-  color:#60a5fa;
-  margin-top:0;
-}
+    /* AVATAR */
 
-ul{
-  line-height:1.8;
-  color:#d1d5db;
-}
+    .avatar{
+      width:300px;
+      height:160px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #3b82f6;
+      box-shadow:0 0 20px rgba(59,130,246,0.6);
+      margin-top:-80px;
+      background:#111827;
+    }
 
-</style>
+    main{
+      max-width:1000px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    .card{
+      background:#1f2937;
+      padding:25px;
+      border-radius:18px;
+      margin-bottom:20px;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    h2{
+      color:#60a5fa;
+      margin-top:0;
+    }
+
+    ul{
+      line-height:1.8;
+      color:#d1d5db;
+    }
+
+    /* TAGS */
+
+    .tag{
+      display:inline-block;
+      padding:5px 10px;
+      border-radius:8px;
+      background:#2563eb;
+      font-size:12px;
+      margin-right:5px;
+    }
+
+    /* LINKS */
+
+    a{
+      color:#60a5fa;
+      text-decoration:none;
+    }
+
+    .link{
+      display:inline-block;
+      padding:8px 12px;
+      background:#2563eb;
+      color:white;
+      border-radius:10px;
+      text-decoration:none;
+      margin:5px 5px 0 0;
+      transition:0.2s;
+    }
+
+    .link:hover{
+      background:#3b82f6;
+      transform:scale(1.05);
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- BACK -->
-<a class="back-btn" href="index.html">⬅ Retour</a>
+<header>
 
-<!-- PROFILE -->
-<div class="profile">
+  <!-- BACK -->
+  <a class="back-btn" href="index.html">⬅ Retour</a>
 
-  <img class="avatar" src="vornakh.jpg" alt="avatar VTuber">
+  <!-- BANNER -->
+  <img class="banner" src="images/banner.jpg" alt="bannière">
+
+  <!-- AVATAR -->
+  <img class="avatar" src="vornakh.png" alt="avatar">
 
   <h1>Vornakh</h1>
   <p class="subtitle">VTuber francophone - Gaming</p>
 
-</div>
+</header>
 
-<!-- CONTENT -->
 <main>
 
+  <!-- INFOS -->
   <div class="card">
 
     <h2>📌 Informations</h2>
 
+    <span class="tag">Gaming</span>
+    <span class="tag">FR</span>
+
     <ul>
       <li><strong>Nom :</strong> Vornakh</li>
-      <li><strong>Type :</strong> VTuber FR</li>
+      <li><strong>Type :</strong> VTuber francophone</li>
       <li><strong>Contenu :</strong> Gaming / Stream</li>
       <li><strong>Langue :</strong> Français</li>
       <li><strong>Statut :</strong> Actif</li>
@@ -134,14 +174,27 @@ ul{
 
   </div>
 
+  <!-- DESCRIPTION -->
   <div class="card">
 
     <h2>📖 Description</h2>
 
     <p>
       Description du VTuber ici.
-      Son lore, son style et son univers.
+      Tu peux mettre son lore, son style,
+      et son univers.
     </p>
+
+  </div>
+
+  <!-- LIENS -->
+  <div class="card">
+
+    <h2>🔗 Réseaux sociaux</h2>
+
+    <a class="link" href="https://youtube.com" target="_blank">YouTube</a>
+    <a class="link" href="https://twitch.tv" target="_blank">Twitch</a>
+    <a class="link" href="https://x.com" target="_blank">Twitter / X</a>
 
   </div>
 
