@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vornakh - VTuber</title>
+  <title>VTubers FR</title>
 
   <style>
 
@@ -15,24 +15,37 @@
     }
 
     header{
-      padding:50px 20px;
+      padding:40px;
       text-align:center;
       background:#111827;
       border-bottom:2px solid rgba(255,255,255,0.1);
-      position:relative;
     }
 
     h1{
       margin:0;
-      font-size:42px;
+      font-size:40px;
       text-shadow:0 0 15px #3b82f6;
     }
 
+    .search-box{
+      margin-top:20px;
+    }
+
+    input{
+      width:60%;
+      max-width:500px;
+      padding:12px;
+      border-radius:10px;
+      border:none;
+      outline:none;
+      font-size:16px;
+    }
+
+    /* BOUTON RETOUR */
     .back-btn{
-      position:absolute;
-      left:20px;
-      top:20px;
-      padding:10px 14px;
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 16px;
       background:#2563eb;
       color:white;
       text-decoration:none;
@@ -47,43 +60,44 @@
     }
 
     main{
-      max-width:1000px;
+      max-width:1200px;
       margin:auto;
       padding:40px 20px;
     }
 
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
     .card{
       background:#1f2937;
-      padding:20px;
-      border-radius:18px;
-      margin-bottom:20px;
+      padding:15px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.25s;
       border:1px solid rgba(255,255,255,0.1);
     }
 
-    .profile-img{
-      width:100%;
-      max-height:300px;
-      object-fit:cover;
-      border-radius:15px;
-      margin-bottom:15px;
-    }
-
-    .tag{
-      display:inline-block;
-      padding:5px 10px;
-      border-radius:8px;
-      background:#2563eb;
-      font-size:12px;
-      margin-top:10px;
-    }
-
-    ul{
-      line-height:1.8;
+    .card:hover{
+      transform:scale(1.06);
+      box-shadow:0 0 25px rgba(59,130,246,0.6);
+      border-color:#3b82f6;
     }
 
     a{
       color:#60a5fa;
       text-decoration:none;
+    }
+
+    .tag{
+      display:inline-block;
+      margin-top:8px;
+      padding:3px 8px;
+      font-size:12px;
+      border-radius:8px;
+      background:#2563eb;
     }
 
   </style>
@@ -93,58 +107,70 @@
 
 <header>
 
-  <a class="back-btn" href="index.html">⬅ Retour</a>
+  <h1>📚 Liste des VTubers FR</h1>
 
-  <h1>Vornakh</h1>
-  <p>VTuber francophone - Gaming</p>
+  <!-- BOUTON RETOUR -->
+  <a href="../index.html" class="back-btn">⬅ Retour accueil</a>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Rechercher un VTuber...">
+  </div>
 
 </header>
 
 <main>
 
-  <div class="card">
+  <div class="grid" id="list">
 
-    <img class="profile-img" src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+    <div class="card">
+      <h3 class="name">Vornakh</h3>
+      <span class="tag">Gaming</span>
+      <br><br>
+      <a href="vornakh.html">Voir profil</a>
+    </div>
 
-    <span class="tag">Gaming</span>
+    <div class="card">
+      <h3 class="name">Amelie</h3>
+      <span class="tag">IRL</span>
+      <br><br>
+      <a href="amelie.html">Voir profil</a>
+    </div>
 
-    <h2>📌 Informations</h2>
-
-    <ul>
-      <li>Nom : Vornakh</li>
-      <li>Type : VTuber francophone</li>
-      <li>Contenu : Gaming / Streaming</li>
-      <li>Langue : Français</li>
-      <li>Statut : Actif</li>
-    </ul>
-
-  </div>
-
-  <div class="card">
-
-    <h2>📖 Description</h2>
-
-    <p>
-      Ici tu mets la description du VTuber,
-      son univers, son lore, son style,
-      et ce qui le rend unique.
-    </p>
-
-  </div>
-
-  <div class="card">
-
-    <h2>🔗 Liens</h2>
-
-    <ul>
-      <li><a href="#">YouTube</a></li>
-      <li><a href="#">Twitch</a></li>
-      <li><a href="#">Twitter / X</a></li>
-    </ul>
+    <div class="card">
+      <h3 class="name">Kirari</h3>
+      <span class="tag">Musique</span>
+      <br><br>
+      <a href="kirari.html">Voir profil</a>
+    </div>
 
   </div>
 
 </main>
+
+<script>
+
+  const search = document.getElementById("search");
+  const cards = document.querySelectorAll(".card");
+
+  search.addEventListener("input", function(){
+
+    const value = this.value.toLowerCase();
+
+    cards.forEach(card => {
+
+      const name = card.querySelector(".name").textContent.toLowerCase();
+
+      if(name.includes(value)){
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+  });
+
+</script>
 
 </body>
 </html>
